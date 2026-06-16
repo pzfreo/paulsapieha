@@ -1,0 +1,77 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'A memorial site for Paul Sapieha (1900–1987).' } = Astro.props;
+
+const NAV_TAPES = [
+  ['Tape 1 Side 1', '/transcriptions/tape-1-side-1'],
+  ['Tape 1 Side 2', '/transcriptions/tape-1-side-2'],
+  ['Tape 2 Side 1', '/transcriptions/tape-2-side-1'],
+  ['Tape 2 Side 2', '/transcriptions/tape-2-side-2'],
+  ['Tape 3 Side 1', '/transcriptions/tape-3-side-1'],
+  ['Tape 3 Side 2', '/transcriptions/tape-3-side-2'],
+  ['Tape 4 Side 1', '/transcriptions/tape-4-side-1'],
+  ['Tape 4 Side 2', '/transcriptions/tape-4-side-2'],
+  ['Tape 5 Side 1', '/transcriptions/tape-5-side-1'],
+  ['Tape 5 Side 2', '/transcriptions/tape-5-side-2'],
+  ['Tape 6 Side 1', '/transcriptions/tape-6-side-1'],
+  ['Tape 6 Side 2', '/transcriptions/tape-6-side-2'],
+];
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content={description}>
+  <title>{title === 'Paul Sapieha' ? title : `${title} – Paul Sapieha`}</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="site-title"><a href="/">Paul Sapieha</a></div>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Biography</a>
+          <ul>
+            <li><a href="/biography/in-memoriam">In Memoriam</a></li>
+            <li><a href="/biography/altarpiece">Wita Stwosza altarpiece</a></li>
+            <li><a href="/biography/polish-profile">'Polish Profile' by Virgilia Sapieha</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/transcriptions/tape-1-side-1">Transcriptions (Summaries)</a>
+          <ul>
+            {NAV_TAPES.map(([label, href]) => (
+              <li><a href={href}>{label}</a></li>
+            ))}
+          </ul>
+        </li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <slot />
+</main>
+
+<footer>
+  <nav>
+    <a href="/">Biography</a> |
+    <a href="/transcriptions/tape-1-side-1">Transcriptions (Summaries)</a> |
+    <a href="/contact">Contact</a>
+  </nav>
+  <p>&copy; Paul Sapieha Memorial Site</p>
+</footer>
+
+</body>
+</html>

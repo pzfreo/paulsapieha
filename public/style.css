@@ -1,0 +1,295 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #1a1a1a;
+  background-color: #faf9f7;
+}
+
+a {
+  color: #5c4a2a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Site header ---- */
+
+.site-header {
+  background: #3a3a3a;
+  border-bottom: 3px solid #8b7355;
+}
+
+.site-header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  padding-right: 2rem;
+}
+
+.site-title a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f0ede8;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.site-title a:hover {
+  text-decoration: none;
+  color: #d4c9b8;
+}
+
+/* ---- Navigation ---- */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li > a {
+  display: block;
+  color: #d4c9b8;
+  padding: 1.1rem 1.1rem;
+  font-size: 0.875rem;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+nav ul li > a:hover {
+  color: #fff;
+  background: #555;
+  text-decoration: none;
+}
+
+/* Dropdown */
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #2c2c2c;
+  min-width: 250px;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+nav ul li:hover > ul,
+nav ul li:focus-within > ul {
+  display: block;
+}
+
+nav ul ul li > a {
+  padding: 0.7rem 1.25rem;
+  border-bottom: 1px solid #3a3a3a;
+  font-size: 0.85rem;
+}
+
+nav ul ul li:last-child > a {
+  border-bottom: none;
+}
+
+/* ---- Main content ---- */
+
+main {
+  max-width: 820px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem 5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #d4c4a8;
+}
+
+h2 {
+  font-size: 1.35rem;
+  font-weight: normal;
+  color: #3a3a3a;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #444;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.page-meta {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e8e2d9;
+}
+
+/* ---- Figures / images ---- */
+
+figure {
+  margin: 2rem 0;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ddd;
+}
+
+figcaption {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.82rem;
+  color: #666;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.image-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.image-row figure {
+  flex: 1;
+  min-width: 180px;
+  margin: 0;
+}
+
+/* ---- Tape navigation ---- */
+
+.tape-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #d4c4a8;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.875rem;
+}
+
+.tape-nav a {
+  padding: 0.5rem 1rem;
+  background: #f0ede8;
+  border: 1px solid #d4c4a8;
+  border-radius: 3px;
+}
+
+.tape-nav a:hover {
+  background: #e8e2d9;
+  text-decoration: none;
+}
+
+/* ---- Footer ---- */
+
+footer {
+  background: #3a3a3a;
+  color: #aaa;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.85rem;
+}
+
+footer nav {
+  margin-bottom: 0.75rem;
+}
+
+footer nav a {
+  color: #c4b898;
+  margin: 0 0.6rem;
+}
+
+footer nav a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+
+  .site-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-title {
+    padding: 0.75rem 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li > a {
+    padding: 0.65rem 0.75rem;
+  }
+
+  nav ul ul {
+    position: static;
+    display: block;
+    box-shadow: none;
+    background: #222;
+    min-width: auto;
+  }
+
+  nav ul ul li > a {
+    padding-left: 1.75rem;
+    font-size: 0.82rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .tape-nav {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}

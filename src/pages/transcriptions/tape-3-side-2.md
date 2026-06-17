@@ -36,6 +36,8 @@ Whether this is good or bad, history will judge – but, in any case, I believe 
 
 ---
 
+<figure><img src="/images/img_0354.jpg" alt="Paul Sapieha and Geoffroi de Legge"><figcaption>Paul Sapieha and Geoffroi de Legge</figcaption></figure>
+
 Whilst I was in Paris on 15th or 16th of December, Rundstedt moved and went right straight through a gap in the lines and got quite far into Luxembourg.
 
 I rushed back and came back to Verdun, and there was, just at that moment when I got back there, a meeting between Bradley, Eisenhower, and Patton was present and, of course Hodges, the First Army commander, and they were discussing in front of the map what had happened when, all at once, Patton got up, hit the table with his stick (he always carried a stick), and he said, "This is perfectly wonderful because I should get them from [the south], and I shall shoot them up like ducks."
@@ -63,3 +65,11 @@ Whilst we were in Luxembourg, I used to go quite often to see Prince Felix and h
 During our stay in Luxembourg, Prince Felix decorated General Bradley, of course, and Sibert and so on, and also gave me two decorations. One was the Cross of the Chevalier, and the other one was the Croix de Guerre of Luxembourg.
 
 **The following pictures are from 1945 and there is no narrative to go with them.**
+
+<div class="image-row">
+  <figure><img src="/images/img_1716.jpg" alt="1945"></figure>
+  <figure><img src="/images/img_0457.jpg" alt="1945"></figure>
+  <figure><img src="/images/img_0456.jpg" alt="1945"></figure>
+  <figure><img src="/images/img_0453.jpg" alt="1945"></figure>
+  <figure><img src="/images/img_0452.jpg" alt="1945"></figure>
+</div>

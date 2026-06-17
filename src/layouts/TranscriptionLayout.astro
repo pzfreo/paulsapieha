@@ -1,0 +1,31 @@
+---
+import Layout from './Layout.astro';
+
+const { frontmatter } = Astro.props;
+const { title, date, transcribed, reference, prev, next } = frontmatter;
+---
+
+<Layout title={title}>
+  <h1>{title}</h1>
+
+  {(date || transcribed || reference) && (
+    <p class="page-meta">
+      {date && <span>{date}</span>}
+      {transcribed && <span> &middot; Transcribed {transcribed}</span>}
+      {reference && <span> &middot; {reference}</span>}
+    </p>
+  )}
+
+  <slot />
+
+  <div class="tape-nav">
+    {prev
+      ? <a href={prev.url}>&larr; {prev.label}</a>
+      : <span></span>
+    }
+    {next
+      ? <a href={next.url}>{next.label} &rarr;</a>
+      : <span></span>
+    }
+  </div>
+</Layout>

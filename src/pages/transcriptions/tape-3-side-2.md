@@ -36,7 +36,7 @@ Whether this is good or bad, history will judge – but, in any case, I believe 
 
 ---
 
-<figure><img src="/images/img_0354.jpg" alt="Paul Sapieha and Geoffroi de Legge"><figcaption>Paul Sapieha and Geoffroi de Legge</figcaption></figure>
+<figure><img src="/images/img_0354.jpg" alt="Paul Sapieha and Geoffroi de Legge" width="2807" height="2099"><figcaption>Paul Sapieha and Geoffroi de Legge</figcaption></figure>
 
 Whilst I was in Paris on 15th or 16th of December, Rundstedt moved and went right straight through a gap in the lines and got quite far into Luxembourg.
 
@@ -67,9 +67,9 @@ During our stay in Luxembourg, Prince Felix decorated General Bradley, of course
 **The following pictures are from 1945 and there is no narrative to go with them.**
 
 <div class="image-row">
-  <figure><img src="/images/img_1716.jpg" alt="1945"></figure>
-  <figure><img src="/images/img_0457.jpg" alt="1945"></figure>
-  <figure><img src="/images/img_0456.jpg" alt="1945"></figure>
-  <figure><img src="/images/img_0453.jpg" alt="1945"></figure>
-  <figure><img src="/images/img_0452.jpg" alt="1945"></figure>
+  <figure><img src="/images/img_1716.jpg" alt="1945" width="2132" height="2132"></figure>
+  <figure><img src="/images/img_0457.jpg" alt="1945" width="877" height="663"></figure>
+  <figure><img src="/images/img_0456.jpg" alt="1945" width="819" height="614"></figure>
+  <figure><img src="/images/img_0453.jpg" alt="1945" width="960" height="720"></figure>
+  <figure><img src="/images/img_0452.jpg" alt="1945" width="908" height="447"></figure>
 </div>
